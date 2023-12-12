@@ -1,0 +1,488 @@
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0px;
+}
+button .normal{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px 40px;
+    color: cadetblue;
+    background-color: rgb(23, 62, 96);
+    border-radius:6px;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    transition: 0.2s;
+}
+button .white{
+    font-size: 13px;
+    font-weight: 800;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor:pointer;
+    border:1px solid #fff;
+    outline:none;
+    transition: 0.2s;
+}
+
+#header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color:cornsilk;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position:relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:royalblue;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+
+    color:brown;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color:brown;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+    
+
+}
+#hero {
+
+    background-image: url(img/1.png);
+    height: 90vh;
+    width:1oo%;
+    background-size:cover;
+    background-position:top 25% right 0;
+    padding: 0 80px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+
+
+}
+#hero h4{
+    padding: bottom 15px;;
+
+}
+#hero h1{
+    color:rgba(241, 31, 97, 0.682);
+
+}
+#hero button{
+    background-image: url(img/2.png);
+    background-color: transparent;
+    color: rgb(230, 62, 62);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+#feature{
+
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#feature .f-box{
+width: 180px;
+text-align: center;
+padding: 25px 15px;
+box-shadow: 20px 20px 34px rgb(0,0,0,0.03);
+border: 1px solid rgb(139, 133, 109);
+border-radius: 4px;
+margin: 15px 0;
+
+}
+#feature.f-box:hover{
+
+    box-shadow: 10px 10px 54px rgba(214, 43, 12, 0.01)
+}
+
+#feature .f-box img{
+
+    width: 100px;
+    margin-bottom: 10px;
+}
+#feature .f-box h6{
+    padding:9px 8px 6px 8px;
+    left: 1;
+    border-radius: 4px;
+    color: #088178;
+    background: color #e35574;;
+}
+#feature .f-box h6:nth-child(2){
+    background-color:#e4b1bc;
+    color: #813208;
+}
+#feature .f-box h6:nth-child(3){
+    background-color:#e4b1bc;
+    color: rgb(8, 129, 12);
+}
+
+#feature .f-box h6:nth-child(4){
+    background-color:#e4b1bc;
+    color: rgb(8, 129, 14);
+}
+#feature .f-box h6:nth-child(5){
+    background-color:#e4b1bc;
+    color: #080c81;
+}
+#feature .f-box h6:nth-child(6){
+    background-color:#e4b1bc;
+    color: #348108;
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+#product1 .pro{
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.02,);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+} 
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.08,);
+
+}
+#product1 .pro img{
+    width: 100px;
+    border-radius: 20px;
+}
+#product1 .pro.des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1.pro.des span{
+    color: #9b1834;
+    font-size: 12px;
+}
+#product1.pro.des h5{
+    padding: 7px;
+    color: #813208;
+    font-size: 14px ;
+}
+#product1.pro.des i{
+    color: rgb(243,181,25);
+    font-size: 25px;
+
+}
+#product1.pro.des h4{
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:aqua;
+}
+#product1.pro .cart
+{
+    width: 40px;
+    height: 40px;
+    color: #348108;
+    border-radius: 50px;
+    background-color: #e4b1bc;
+    font-weight: 500;
+    line-height: 50px;
+    border: 1px  solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+} 
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/bannner.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+
+}
+#banner h4{
+    color: #cce7d0;
+    font-size: 20px;
+
+}
+#banner h2{
+    color:rgb(76, 231, 231);
+    font-size: 40px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color:rgb(255, 0, 21)
+   
+}
+#banner button :hover{
+background: #9b1834;
+color: aliceblue;
+
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#sm-banner .banner-box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(img/bannner2.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner h4{
+    color: rgb(229, 48, 48);
+    font-size: px;
+    font-weight: 200;
+
+}
+ #sm-banner h2{
+    color: rgb(228, 32, 32);
+    font-size:28px;
+    font-weight: 800;
+    
+}
+#sm-banner span{
+    color: rgb(147, 24, 55);
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    
+} 
+#sm-banner .banner-box:hover button{
+    background-color: #b2576a;
+    border: 1px solid #e35574;
+    
+
+}
+#sm-banner .banner-box2{
+    background-image: url(img/bannner3.jpg);
+
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(se1.webp);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 h2{
+    color: rgb(239, 229, 229);
+    font-weight: 900;
+    font-size: 25px;
+}
+#banner3 h3{
+    color: #e02e2e;
+    font-weight: 800;
+    font-size: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url(sw2.webp);
+
+
+}
+#banner3 .banner-box3{
+    background-image: url(se3.webp);
+
+
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(fooot.webp);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: #430d18;
+
+    
+
+}
+#newsletter h4{
+    color: #fff;
+}
+#newsletter p{
+    color: #fff;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+footer p{
+    font-size: 13px;
+   margin: 0 0 8px 0;
+    
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+   color:black;
+   margin-bottom: 10px;
+ 
+}
+footer.follow i{
+    color: #9b1834;
+    padding: 4px;
+    cursor: pointer;
+
+}
+footer.install .row img{
+    border: 1px solid #520917;
+    border-radius: 12px;
+
+
+}
+footer.install img{
+    margin: 10px 0 15px 0 ;
+}
+footer.follow i:hover,
+footer a:hover{
+    color: #e02e2e;
+}
+footer .copy{
+    width: 100%;
+    text-align: center;
+
+}
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+
+        align-items:flex-start;
+
+        justify-content:flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgb(0,0,0,0.1);
+        padding: 80px 0 0 10px; 
+        transition: 0.3s;       
+    }
+    #navbar .active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+
+     
+
+
+    }
+    #mobile{
+        display: none;
+        align-items: center;
+        
+    
+    }
+    #mobile i{
+        color: black;
+        font-size: 24px;\
+        padding: 20px;
+    }
+}
+#close{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: darkblue;
+    font-size: 20px;
+    
+}
